@@ -1,0 +1,374 @@
+нояб. 13, 2025 12:15:15 AM GameLogger logInfo
+INFO: [SIEGE_001] Менеджер битвы инициализирован: SIEGE_001
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Северная стена
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Главные ворота
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Громовержец
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Леголас
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Боец добавлен: Артур
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === НАЧАЛО ХОДА 1 ===
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: ВАЛИДАЦИЯ АТАКИ - цель: Громовержец - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Леголас готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Громовержец: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: АТАКА ЗАЩИТНИКА - урон: 28, цель: Громовержец
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: УСПЕШНАЯ АТАКА - нанес 28 урона Громовержец
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: ВАЛИДАЦИЯ АТАКИ - цель: Громовержец - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Артур готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Громовержец: ПОЛОМКА - осадное орудие сломано от урона!
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [SIEGE_ERROR]: Ошибка осадного орудия Громовержец при получение урона: Орудие сломалось от полученного урона
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+WARNING: Осадное орудие: Громовержец, действие: получение урона
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: АТАКА ЗАЩИТНИКА - урон: 37, цель: Громовержец
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: УСПЕШНАЯ АТАКА - нанес 37 урона Громовержец
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.041131800: Невозможно атаковать цель: Сторожевая башня
+	at GameValidator.validateBattleAction(GameValidator.java:75)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at BattleManager.lambda$performSiegeActions$8(BattleManager.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at BattleManager.lambda$performSiegeActions$9(BattleManager.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at BattleManager.performSiegeActions(BattleManager.java:110)
+	at BattleManager.playTurn(BattleManager.java:82)
+	at Main.main(Main.java:13)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Невозможно атаковать цель: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Состояние битвы - Защитники: 2, Элементы замка: 3, Осадные орудия: 1
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === ХОД 1 ЗАВЕРШЕН ===
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Цель не найдена: Призрак
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === НАЧАЛО ХОДА 2 ===
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Леголас готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: АТАКА ЗАЩИТНИКА - урон: 28, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: УСПЕШНАЯ АТАКА - нанес 28 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Артур готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: АТАКА ЗАЩИТНИКА - урон: 39, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: УСПЕШНАЯ АТАКА - нанес 39 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.058381800: Невозможно атаковать цель: Сторожевая башня
+	at GameValidator.validateBattleAction(GameValidator.java:75)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at BattleManager.lambda$performSiegeActions$8(BattleManager.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at BattleManager.lambda$performSiegeActions$9(BattleManager.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at BattleManager.performSiegeActions(BattleManager.java:110)
+	at BattleManager.playTurn(BattleManager.java:82)
+	at Main.main(Main.java:13)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Невозможно атаковать цель: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Состояние битвы - Защитники: 2, Элементы замка: 3, Осадные орудия: 1
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === ХОД 2 ЗАВЕРШЕН ===
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Проверка улучшения прошла успешно
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Сторожевая башня улучшена до уровня 2!
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Сторожевая башня: УЛУЧШЕНИЕ - до уровня 2
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Проверка улучшения прошла успешно
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Сторожевая башня улучшена до уровня 3!
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Сторожевая башня: УЛУЧШЕНИЕ - до уровня 3
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации улучшения
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации улучшения
+[UPGRADE_ERROR] 2025-11-13T00:15:16.066632100: Невозможно улучшить: Сторожевая башня
+	at GameValidator.validateUpgrade(GameValidator.java:91)
+	at BattleManager.upgradeCombatant(BattleManager.java:62)
+	at Main.demonstrateExceptionHandling(Main.java:64)
+	at Main.main(Main.java:15)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [UPGRADE_ERROR]: Невозможно улучшить: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации улучшения
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации улучшения
+[UPGRADE_ERROR] 2025-11-13T00:15:16.067381600: Невозможно улучшить: Сторожевая башня
+	at GameValidator.validateUpgrade(GameValidator.java:91)
+	at BattleManager.upgradeCombatant(BattleManager.java:62)
+	at Main.demonstrateExceptionHandling(Main.java:65)
+	at Main.main(Main.java:15)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [UPGRADE_ERROR]: Невозможно улучшить: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === НАЧАЛО ХОДА 3 ===
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Леголас готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: АТАКА ЗАЩИТНИКА - урон: 29, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: УСПЕШНАЯ АТАКА - нанес 29 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Артур готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: АТАКА ЗАЩИТНИКА - урон: 38, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: УСПЕШНАЯ АТАКА - нанес 38 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.071881600: Невозможно атаковать цель: Сторожевая башня
+	at GameValidator.validateBattleAction(GameValidator.java:75)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at BattleManager.lambda$performSiegeActions$8(BattleManager.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at BattleManager.lambda$performSiegeActions$9(BattleManager.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at BattleManager.performSiegeActions(BattleManager.java:110)
+	at BattleManager.playTurn(BattleManager.java:82)
+	at Main.main(Main.java:13)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Невозможно атаковать цель: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Состояние битвы - Защитники: 2, Элементы замка: 3, Осадные орудия: 1
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === ХОД 3 ЗАВЕРШЕН ===
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.073382100: Атакующий Громовержец мертв
+	at GameValidator.validateBattleAction(GameValidator.java:69)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at Main.demonstrateExceptionHandling(Main.java:69)
+	at Main.main(Main.java:15)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Атакующий Громовержец мертв
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.074131800: Атакующий Громовержец мертв
+	at GameValidator.validateBattleAction(GameValidator.java:69)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at Main.demonstrateExceptionHandling(Main.java:70)
+	at Main.main(Main.java:15)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Атакующий Громовержец мертв
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === НАЧАЛО ХОДА 4 ===
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Леголас готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: АТАКА ЗАЩИТНИКА - урон: 25, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: УСПЕШНАЯ АТАКА - нанес 25 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Артур готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: АТАКА ЗАЩИТНИКА - урон: 38, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: УСПЕШНАЯ АТАКА - нанес 38 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.077881800: Невозможно атаковать цель: Сторожевая башня
+	at GameValidator.validateBattleAction(GameValidator.java:75)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at BattleManager.lambda$performSiegeActions$8(BattleManager.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at BattleManager.lambda$performSiegeActions$9(BattleManager.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at BattleManager.performSiegeActions(BattleManager.java:110)
+	at BattleManager.playTurn(BattleManager.java:82)
+	at Main.main(Main.java:13)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Невозможно атаковать цель: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Состояние битвы - Защитники: 2, Элементы замка: 3, Осадные орудия: 1
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === ХОД 4 ЗАВЕРШЕН ===
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [SIEGE_ERROR]: Ошибка осадного орудия Громовержец при получение урона: Орудие уже неисправно
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+WARNING: Осадное орудие: Громовержец, действие: получение урона
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [SIEGE_ERROR]: Ошибка осадного орудия Громовержец при получение урона: Орудие уже неисправно
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+WARNING: Осадное орудие: Громовержец, действие: получение урона
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [SIEGE_ERROR]: Ошибка осадного орудия Громовержец при получение урона: Орудие уже неисправно
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+WARNING: Осадное орудие: Громовержец, действие: получение урона
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [SIEGE_ERROR]: Ошибка осадного орудия Громовержец при получение урона: Орудие уже неисправно
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+WARNING: Осадное орудие: Громовержец, действие: получение урона
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [SIEGE_ERROR]: Ошибка осадного орудия Громовержец при получение урона: Орудие уже неисправно
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+WARNING: Осадное орудие: Громовержец, действие: получение урона
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.081631200: Атакующий Громовержец мертв
+	at GameValidator.validateBattleAction(GameValidator.java:69)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at Main.demonstrateExceptionHandling(Main.java:77)
+	at Main.main(Main.java:15)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Атакующий Громовержец мертв
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === НАЧАЛО ХОДА 5 ===
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Леголас готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: АТАКА ЗАЩИТНИКА - урон: 29, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Леголас: УСПЕШНАЯ АТАКА - нанес 29 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: ВАЛИДАЦИЯ АТАКИ - цель: Требушет - разрешено
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Защитник Артур готов к атака
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Требушет: УСТОЙЧИВОСТЬ - орудие выдержало урон
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: АТАКА ЗАЩИТНИКА - урон: 39, цель: Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logBattleAction
+INFO: [БОЙ] Артур: УСПЕШНАЯ АТАКА - нанес 39 урона Требушет
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: [SIEGE_001] Ошибка валидации боевого действия
+нояб. 13, 2025 12:15:16 AM GameLogger logError
+SEVERE: Ошибка валидации боевого действия
+[BATTLE_ERROR] 2025-11-13T00:15:16.084631800: Невозможно атаковать цель: Сторожевая башня
+	at GameValidator.validateBattleAction(GameValidator.java:75)
+	at BattleManager.performAttack(BattleManager.java:40)
+	at BattleManager.lambda$performSiegeActions$8(BattleManager.java:115)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at BattleManager.lambda$performSiegeActions$9(BattleManager.java:115)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at BattleManager.performSiegeActions(BattleManager.java:110)
+	at BattleManager.playTurn(BattleManager.java:82)
+	at Main.main(Main.java:13)
+
+нояб. 13, 2025 12:15:16 AM GameLogger logException
+SEVERE: Игровое исключение [BATTLE_ERROR]: Невозможно атаковать цель: Сторожевая башня
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] Состояние битвы - Защитники: 2, Элементы замка: 3, Осадные орудия: 1
+нояб. 13, 2025 12:15:16 AM GameLogger logInfo
+INFO: [SIEGE_001] === ХОД 5 ЗАВЕРШЕН ===
